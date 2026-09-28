@@ -89,23 +89,14 @@ public:
 int main() {
 
     // Creating student objects
-    Student s1(101, "Rahul");
-    Student s2(102, "Priya");
+    Student s1(101, "Shree");
+    Student s2(102, "Samiksha");
 
-    // ------------------------------------------------------
-    // Marking attendance for Rahul
-    // Present, Present, Absent
-    // Attendance = 66.67%
-    // ------------------------------------------------------
+  
     s1.markAttendance(true);
     s1.markAttendance(true);
     s1.markAttendance(false);
 
-    // ------------------------------------------------------
-    // Marking attendance for Priya
-    // Present, Present, Present
-    // Attendance = 100%
-    // ------------------------------------------------------
     s2.markAttendance(true);
     s2.markAttendance(true);
     s2.markAttendance(true);
@@ -150,11 +141,11 @@ int main() {
         file << "Attendance Report" << endl;
         file << "=================" << endl;
 
-        file << "Rahul : "
+        file << "Shree : "
              << s1.getAttendancePercentage()
              << "%" << endl;
 
-        file << "Priya : "
+        file << "Samiksha : "
              << s2.getAttendancePercentage()
              << "%" << endl;
 
